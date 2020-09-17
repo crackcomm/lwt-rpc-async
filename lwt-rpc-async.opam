@@ -1,0 +1,20 @@
+opam-version: "2.0"
+maintainer: "crackcomm@gmail.com"
+authors: ["David Sheets" "Łukasz Kurowski"]
+homepage: "https://gitlab.com/crackcomm/lwt-rpc-async"
+bug-reports: "https://gitlab.com/crackcomm/lwt-rpc-async/issues"
+dev-repo: "git+https://gitlab.com/crackcomm/lwt-rpc-async.git"
+
+depends: [
+    "ocaml" {>= "4.03.0"}
+    "dune"
+    "core"
+    "alcotest" {with-test}
+]
+
+build: [
+    ["dune" "build" "-p" name]
+    ["dune" "runtest" "-p" name] {with-test}
+]
+
+synopsis: "Lwt implementation of Core Async RPC protocol"

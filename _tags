@@ -1,3 +1,0 @@
-true: syntax(camlp4o)
-true: package(bin_prot.syntax,lwt,lwt.unix)
-true: thread,debug,annot

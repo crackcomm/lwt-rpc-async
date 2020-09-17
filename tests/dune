@@ -1,0 +1,3 @@
+(tests
+ (names tests)
+ (libraries alcotest alcotest-lwt lwt lwt.unix lwt-rpc-async))

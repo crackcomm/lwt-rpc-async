@@ -1,0 +1,6 @@
+(library
+ (name lwt_rpc_async)
+ (public_name lwt-rpc-async)
+ (libraries bin_prot lwt lwt.unix logs.lwt)
+ (preprocess
+  (pps ppx_bin_prot)))
